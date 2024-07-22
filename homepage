@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サンプルページ</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>ウェルカムページ</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#section1">セクション1</a></li>
+            <li><a href="#section2">セクション2</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="section1">
+            <h2>セクション1</h2>
+            <p>このセクションでは、以下の内容が含まれています。</p>
+            <ol>
+                <li>ポイント1</li>
+                <li>ポイント2</li>
+                <li>ポイント3</li>
+            </ol>
+            <img src="image1.jpg" alt="サンプル画像1">
+        </section>
+        <section id="section2">
+            <h2>セクション2</h2>
+            <p>このセクションでは、以下の内容が含まれています。</p>
+            <ul>
+                <li>項目1</li>
+                <li>項目2</li>
+                <li>項目3</li>
+            </ul>
+            <img src="image2.jpg" alt="サンプル画像2">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 サンプルサイト</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+main {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        float: none;
+    }
+}
